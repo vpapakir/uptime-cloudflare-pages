@@ -6,7 +6,7 @@ var semver     = require('semver');
 mongoose.connect(process.env.MONGO_DB_URL);
 mongoose.connection.on('error', function (err) {
   console.error('MongoDB error: ' + err.message);
-  console.error('Make sure a mongoDB server is running and accessible by this application');
+  console.error('Make sure a mongoDB server is running and accessible by this applicationn');
   process.exit(1);
 });
 mongoose.connection.on('open', function (err) {

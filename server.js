@@ -99,11 +99,11 @@ var io = socketIo.listen(server);
 
 io.configure('development', function() {
   if (!config.verbose) io.set('log level', 1);
-});*/
+});
 
 CheckEvent.on('afterInsert', function(event) {
   io.sockets.emit('CheckEvent', event.toJSON());
-});
+});*/
 
 io.sockets.on('connection', function(socket) {
   socket.on('set check', function(check) {

@@ -1,11 +1,12 @@
 url: 'http://localhost:8082'
 
 mongodb:
-  server:   localhost
+  server:   cluster0.xukidqq.mongodb.net
   database: uptime
-  user:     root 
-  password:
-  connectionString:       # alternative to setting server, database, user and password separately
+  user:     
+  password: 
+  connectionString: "mongodb+srv://cluster0.xukidqq.mongodb.net:27017/?retryWrites=true&w=majority"    
+  # alternative to setting server, database, user and password separately
 
 monitor:
   name:                   origin

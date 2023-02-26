@@ -92,14 +92,14 @@ app.emit('afterLastRoute', app);
 // Sockets
 var io = socketIo.listen(server);
 
-io.configure('production', function() {
+/*io.configure('production', function() {
   io.enable('browser client etag');
   io.set('log level', 1);
 });
 
 io.configure('development', function() {
   if (!config.verbose) io.set('log level', 1);
-});
+});*/
 
 CheckEvent.on('afterInsert', function(event) {
   io.sockets.emit('CheckEvent', event.toJSON());

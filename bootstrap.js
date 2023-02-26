@@ -3,7 +3,7 @@ var config     = require('config');
 var semver     = require('semver');
 
 // configure mongodb
-mongoose.connect(MONGO_DB_URL);
+mongoose.connect(process.env.MONGO_DB_URL);
 mongoose.connection.on('error', function (err) {
   console.error('MongoDB error: ' + err.message);
   console.error('Make sure a mongoDB server is running and accessible by this application');

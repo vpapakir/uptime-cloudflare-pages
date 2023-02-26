@@ -1,4 +1,5 @@
 mongodb:
-  server:   localhost
-  database: uptime-test
-  user:     root
+  server:   ac-hub7wi2-shard-00-00.xukidqq.mongodb.net:27017
+  database: uptime
+  user:     vpapakir
+  password: XTkGHb9bMePEDvOC
